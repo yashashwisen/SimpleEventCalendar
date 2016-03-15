@@ -1,0 +1,198 @@
+.panel {
+    margin-top: 20px;
+}
+
+.hasEvent
+{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background: #EF5252;
+    top: 3px;
+    right: 3px;
+    border-radius: 8px;
+}
+
+.simpleCalendarContainer ul
+{
+    list-style: none;
+}
+
+thead {
+    background-color: rgba(213, 214, 218, 0.79);
+}
+
+tbody td {
+    cursor: pointer;
+    border-radius: 9px;
+    position: relative;
+}
+
+td > span.glyphicon {
+    right: 5px;
+    position: absolute;
+}
+
+tbody td:hover:not(.notCurrMonth) {
+    background-color: #D4D4D4;
+}
+
+tbody td.selected {
+    background-color: rgba(249, 186, 186, 0.61);
+}
+
+td {
+    height: 65px;
+    line-height: 65px !important;
+}
+
+.popover {
+    color: black;
+}
+
+.panel > div:nth-child(1).row {
+    background-color: #337ab7;
+    color: white;
+    padding: 8px 0px;
+    margin: 0px;
+    font-size: 20;
+    text-align: center;
+    font-weight: bold;
+}
+
+.panel-body {
+    padding: 0px;
+}
+
+.glyphicon-circle-arrow-right {
+    float: right;
+    font-size: 25px;
+}
+
+.glyphicon-circle-arrow-left {
+    float: left;
+    font-size: 25px;
+}
+
+.notCurrMonth {
+    color: #C1B8B8;
+    cursor: default;
+}
+
+.glyphicon-triangle-bottom {
+    cursor: pointer;
+}
+
+.customPopover {
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    padding: 15px 11px;
+    font-size: 13px;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .2);
+    color: black;
+}
+
+.simpleCalendarDatePicker {
+    position: absolute;
+    height: 25%;
+    width: 35%;
+    background-color: #BFBFC3;
+    z-index: 1;
+    left: 1px;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.simpleCalendarHeader > div:nth-child(1) {
+    width: 10%;
+    float: left;
+    padding-left: 10px;
+}
+
+.simpleCalendarHeader > div:nth-child(2) {
+    width: 79.988888%;
+    float: left;
+}
+
+.simpleCalendarHeader > div:nth-child(3) {
+    width: 10%;
+    padding-right: 10px;
+    float: left;
+}
+
+.simpleCalendarHeader .glyphicon {
+    cursor: pointer;
+}
+
+.simpleCalendarContainer .list-group
+{
+    margin: 0px;
+}
+
+.simpleCalendarContainer .list-group > .list-group-item
+{
+    background-color: aliceblue;
+}
+
+.simpleCalendarTable {
+    text-align: center;
+    table-layout: fixed;
+}
+
+.simpleCalendarTable tr,
+.simpleCalendarTable td {
+    border: none !important;
+}
+
+.simpleCalendarContainer > .row > div:nth-child(2) {
+    display: none;
+}
+
+.simpleCalendarContainer > .row > div:nth-child(2) .panel-heading {
+    text-align: center;
+}
+
+/*very tiny screen*/
+
+@media screen and (max-width: 399px) {
+    td {
+        height: 38px;
+        line-height: 38px !important;
+    }
+}
+
+
+/*Tiny Screen*/
+
+@media screen and (min-width: 400px) and (max-width: 579px) {
+    td {
+        height: 45px;
+        line-height: 45px !important;
+    }
+}
+
+
+/*Small Screen iphone*/
+
+@media screen and (min-width: 580px) and (max-width: 767px) {
+    
+}
+
+
+/*Medium Screen ipad*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    td {
+        height: 55px;
+        line-height: 55px !important;
+    }
+}
+
+
+/*Big Screen Laptop*/
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {}
