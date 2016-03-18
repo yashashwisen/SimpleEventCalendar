@@ -2,8 +2,7 @@
     margin-top: 20px;
 }
 
-.hasEvent
-{
+.hasEvent {
     width: 16px;
     height: 16px;
     position: absolute;
@@ -13,8 +12,7 @@
     border-radius: 8px;
 }
 
-.simpleCalendarContainer ul
-{
+.simpleCalendarContainer ul {
     list-style: none;
 }
 
@@ -37,7 +35,7 @@ tbody td:hover:not(.notCurrMonth) {
     background-color: #D4D4D4;
 }
 
-tbody td.selected {
+.simpleCalendarContainer .selected {
     background-color: rgba(249, 186, 186, 0.61);
 }
 
@@ -98,7 +96,6 @@ td {
 
 .simpleCalendarDatePicker {
     position: absolute;
-    height: 25%;
     width: 35%;
     background-color: #BFBFC3;
     z-index: 1;
@@ -128,13 +125,11 @@ td {
     cursor: pointer;
 }
 
-.simpleCalendarContainer .list-group
-{
+.simpleCalendarContainer .list-group {
     margin: 0px;
 }
 
-.simpleCalendarContainer .list-group > .list-group-item
-{
+.simpleCalendarContainer .list-group > .list-group-item {
     background-color: aliceblue;
 }
 
@@ -152,9 +147,21 @@ td {
     display: none;
 }
 
+.simpleCalendarContainer .noEventDiv {
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+    color: #D4CFCF;
+}
+
 .simpleCalendarContainer > .row > div:nth-child(2) .panel-heading {
     text-align: center;
 }
+
+.simpleCalendarDatePicker > .row {
+    margin: 0;
+}
+
 
 /*very tiny screen*/
 
@@ -162,6 +169,31 @@ td {
     td {
         height: 38px;
         line-height: 38px !important;
+    }
+    .simpleCalendarDatePicker {
+        width: 55%;
+        font-size: 12;
+    }
+    .hasEvent {
+        width: 8px;
+        height: 8px;
+    }
+    .calendarMonthYear{
+        font-size: 16px;
+    }
+    .simpleCalendarTable>tbody>tr>td
+    {
+        padding: 5px;
+    }
+    
+    .simpleCalendarContainer .panel .panel-body > .list-group
+    {
+        font-size: 13px;
+    }
+    
+     .simpleCalendarContainer .panel .panel-body > .list-group p
+    {
+        margin-bottom: 5px;
     }
 }
 
@@ -173,14 +205,35 @@ td {
         height: 45px;
         line-height: 45px !important;
     }
+    .simpleCalendarContainer .panel .panel-body > .list-group
+    {
+        font-size: 13px;
+    }
+    .simpleCalendarTable>tbody>tr>td
+    {
+        padding: 5px;
+    }
+    .simpleCalendarDatePicker {
+        width: 40%;
+        font-size: 13;
+    }
+    .hasEvent {
+        width: 9px;
+        height: 9px;
+    }
+    .calendarMonthYear{
+        font-size: 17px;
+    }
+     .simpleCalendarContainer .panel .panel-body > .list-group p
+    {
+        margin-bottom: 5px;
+    }
 }
 
 
 /*Small Screen iphone*/
 
-@media screen and (min-width: 580px) and (max-width: 767px) {
-    
-}
+@media screen and (min-width: 580px) and (max-width: 767px) {}
 
 
 /*Medium Screen ipad*/
