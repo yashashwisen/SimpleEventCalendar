@@ -14,7 +14,7 @@ There are three simple steps to the process:
     - simpleCalendar.js from this repository.
 
 2. Copy paste this tag where exactly you want to show the calendar (make sure to give a distinct Id):
-    - <simpleCalendar id="calendarId"></simpleCalendar>
+    - &lt;simpleCalendar id="calendarId"&gt;&lt;/simpleCalendar&gt;
     
 3. Create a javascript file with a global object 'simpleCalendar' that has a function 'getData: function (id, year, month, success, error)'
     - Include the JavaScript file before simpleCalendar.js in your html.
